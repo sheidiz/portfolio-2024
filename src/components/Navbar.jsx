@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import translations from '../translations/data';
 import { useLanguage } from '../contexts/LanguageContext';
-import { ViewSwitch } from './ViewSwitch';
 import EsFlag from '../assets/es-flag.png';
 import EnFlag from '../assets/en-flag.png';
 
@@ -19,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='sticky mx-2 md:mx-auto mt-1 md:mt-2 mb-6 md:w-fit flex flex-col md:flex-row gap-y-2 align-middle md:justify-center rounded-3xl px-4 md:px-8 py-2 bg-tertiary dark:bg-primary text-white'>
+    <nav className='sticky mx-2 md:mx-auto mb-6 md:w-fit flex flex-col md:flex-row gap-y-2 align-middle md:justify-center rounded-3xl px-4 md:px-8 py-2 bg-tertiary dark:bg-primary text-white'>
       <ul className='flex justify-evenly md:justify-center items-center md:gap-x-4'>
         <li className='md:text-lg font-semibold hover:scale-[102%]'><a href="#about">{t.menu.about}</a></li>
         <li className='md:text-lg font-semibold hover:scale-[102%]'><a href="#experience">{t.menu.experience}</a></li>
