@@ -14,7 +14,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    body.dark {
         --dot-bg: #26272B;
         --dot-color: #f2f2fb;
         --dot-size: 1.5px;

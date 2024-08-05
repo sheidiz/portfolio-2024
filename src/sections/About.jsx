@@ -24,7 +24,7 @@ const About = () => {
           <div className='md:relative w-1/2 md:w-1/2 h-full'>
             <img src={Perfil} alt="Foto de perfil" className='md:absolute inset-0 w-full h-full object-cover object-top rounded-2xl' />
           </div>
-          <ul className="w-1/2 md:w-2/3 bg-lightbox dark:bg-darkbox p-4 rounded-2xl flex flex-col gap-y-2 justify-evenly text-white font-semibold">
+          <ul className="w-1/2 md:w-2/3 bg-lightbox dark:bg-darkbox p-4 rounded-2xl flex flex-col gap-y-3 justify-evenly text-white font-semibold">
             <li><a href="https://www.linkedin.com/in/sheila-diz" target="_blank"><FaLinkedin className='inline mb-1 mr-1' /> LinkedIn</a></li>
             <li><a href="https://github.com/sheidiz" target="_blank"><FaGithub className='inline mb-1 mr-1' /> GitHub</a></li>
             <li><a href="mailto:dizsheila07@gmail.com" target="_blank"><MdEmail className='inline mb-1 mr-1' /> Email</a></li>
@@ -35,7 +35,7 @@ const About = () => {
             }
           </ul>
         </div>
-        <div className='mt-1 md:mt-0 py-4 bg-lightbox dark:bg-darkbox rounded-2xl flex flex-col items-center justify-center text-white font-medium'>
+        <div className='mt-1 md:mt-0 py-2 bg-lightbox dark:bg-darkbox rounded-2xl flex flex-col items-center justify-center text-white font-medium'>
           <img src={ArgentinaFlag} alt="Bandera Argentina" className='pb-2' />
           Buenos Aires, Argentina
         </div>

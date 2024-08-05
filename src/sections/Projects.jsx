@@ -14,7 +14,7 @@ const Projects = () => {
         <h5 className='text-xl font-semibold text-white'>{language == "es" ? "Proyectos Personales" : "Personal Projects"}</h5>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {t.projects.map((p, i) => (
+        {t.projects && t.projects.map((p, i) => (
           <div key={i} className="bg-tertiary dark:bg-secondary rounded-2xl p-4 flex flex-col items-center justify-evenly">
             <h6 className='mb-1 text-quaternary font-semibold text-xl'>{p.title}</h6>
             <p className='text-light text-center text-sm'>{p.description}</p>

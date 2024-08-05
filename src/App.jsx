@@ -1,20 +1,21 @@
-import About from "./sections/About"
-import Experience from "./sections/Experience"
-import Languages from "./sections/Languages"
+import { useContext } from "react"
+import { DarkModeContext } from "./contexts/DarkModeContext"
 import Navbar from "./components/Navbar"
-import { LanguageProvider } from "./contexts/LanguageContext"
-import Projects from "./sections/Projects"
 import ScrollToTopButton from "./components/ScrollToTopButton"
+import About from "./sections/About"
+import Languages from "./sections/Languages"
+import Experience from "./sections/Experience"
+import Projects from "./sections/Projects"
 
 function App() {
+  const { isDarkMode } = useContext(DarkModeContext); 
 
   return (
-    <LanguageProvider>
-      <div className="my-1 md:my-2">
-        <header className="pb-2">
+      <div>
+        <header className="py-2">
           <Navbar />
         </header>
-        <main className="mb-3">
+        <main className="pb-3">
           <About />
           <Languages />
           <Experience />
@@ -22,7 +23,6 @@ function App() {
           <ScrollToTopButton />
         </main>
       </div>
-    </LanguageProvider>
   )
 }
 
