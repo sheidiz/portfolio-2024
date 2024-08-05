@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'lightbox': 'linear-gradient(to bottom, #354530 2.11%, #40534C 100%)',
-        'darkbox': 'linear-gradient(to bottom, #40534C 2.11%, #677D6A 100%)',
+        'lightbox': 'linear-gradient(to bottom, #677D6A 40%, #40534C 100%)',
+        'darkbox': 'linear-gradient(to bottom, #354530 2.11%, #40534C 100%)',
       },
       colors: {
         "primary": "#354530",

@@ -8,7 +8,7 @@ const Experience = () => {
   const t = translations[language];
 
   return (
-    <section id='experience' className='max-w-4xl mx-2 mt-2 md:mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-2 text-white'>
+    <section id='experience' className='max-w-4xl mx-3 mt-3 md:mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-3 text-white'>
       <div className="education-section">
         <Accordion name={language == "es" ? "Educación" : "Education"}>
           <div className="flex justify-center">
@@ -30,7 +30,7 @@ const Experience = () => {
           </div>
         </Accordion>
       </div>
-      <div className="experience-section mt-2 md:mt-0">
+      <div className="experience-section mt-3 md:mt-0">
         <Accordion name={language == "es" ? "Experiencia Laboral" : "Work Experience"}>
           <h4 className='mb-1 font-bold text-light'>Ukelele Growth Marketing</h4>
           <div className="flex justify-center">

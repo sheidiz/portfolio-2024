@@ -9,7 +9,7 @@ const Accordion = ({ name, children }) => {
   };
 
   return (
-    <div className="accordion-item bg-lightbox rounded-xl p-4">
+    <div className="accordion-item bg-tertiary dark:bg-secondary rounded-2xl p-4">
       <div
         className="accordion-header cursor-pointer flex items-center justify-between font-medium duration-200 ease-out text-xl"
         onClick={toggleAccordion}

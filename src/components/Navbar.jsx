@@ -18,17 +18,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='sticky mx-2 md:mx-auto mb-6 md:w-fit flex flex-col md:flex-row gap-y-2 align-middle md:justify-center rounded-3xl px-4 md:px-8 py-2 bg-tertiary dark:bg-primary text-white'>
-      <ul className='flex justify-evenly md:justify-center items-center md:gap-x-4'>
-        <li className='md:text-lg font-semibold hover:scale-[102%]'><a href="#about">{t.menu.about}</a></li>
-        <li className='md:text-lg font-semibold hover:scale-[102%]'><a href="#experience">{t.menu.experience}</a></li>
-        <li className='md:text-lg font-semibold hover:scale-[102%]'><a href="#projects">{t.menu.projects}</a></li>
+    <nav className='mx-3 md:mx-auto md:w-fit flex flex-col md:flex-row gap-y-2 align-middle items-center md:justify-center rounded-full px-4 md:px-36 py-2 md:py-3 bg-tertiary/90 dark:bg-primary/90'>
+      <ul className='flex justify-evenly md:justify-center items-center gap-x-4 text-white'>
+        <li className='font-semibold hover:scale-[102%]'><a href="#about">{t.menu.about}</a></li>
+        <li className='font-semibold hover:scale-[102%]'><a href="#experience">{t.menu.experience}</a></li>
+        <li className='font-semibold hover:scale-[102%]'><a href="#projects">{t.menu.projects}</a></li>
       </ul>
-      <div className={`w-fit md:ml-4 px-4 py-1 flex gap-2 justify-center border-2 border-[#CFCECE] bg-white rounded-full shadow-[inset_0_4px_4px_0_rgba(0,0,0,0.3)] transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`w-fit md:ml-10 px-4 py-1 flex gap-2 justify-center border-2 border-[#CFCECE] bg-white rounded-full shadow-[inset_0_4px_4px_0_rgba(0,0,0,0.3)] transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
         {language == "es" ?
-          <button className='text-slate-500 text-sm font-semibold flex items-center gap-x-1' onClick={() => handleLanguageSwitch('en')}>EN <img src={EnFlag} className='h-fit inline-block' /></button>
+          <button className='text-slate-500 text-xs md:text-sm font-semibold flex items-center gap-x-1' onClick={() => handleLanguageSwitch('en')}>EN <img src={EnFlag} className='h-4 md:h-fit inline-block' /></button>
           :
-          <button className='text-slate-500 text-sm font-semibold flex items-center gap-x-1' onClick={() => handleLanguageSwitch('es')}><img src={EsFlag} className='h-fit inline-block' /> ES</button>
+          <button className='text-slate-500 text-xs md:text-sm font-semibold flex items-center gap-x-1' onClick={() => handleLanguageSwitch('es')}><img src={EsFlag} className='h-4 md:h-fit inline-block' /> ES</button>
         }
       </div>
     </nav>
