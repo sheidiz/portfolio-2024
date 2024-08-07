@@ -1,8 +1,21 @@
-# React + Vite
+<h2 align="center">
+  Portfolio Website<br/>
+  <a href="https://sheiladiz.dev.ar/" target="_blank">sheiladiz.dev.ar</a>
+</h2>
+<div align="center">
+  <img alt="Demo" src="./public/web.png" />
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br/>
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mi portfolio personal <a href="https://sheiladiz.dev.ar/" target="_blank">sheiladiz.dev.ar</a> contiene mis proyectos de github, además de mis habilidades y conocimientos.<br/>
+
+Este proyecto fue construido usando estas tecnologias y herramientas
+- React.js
+- Vite.js
+- Tailwind
+- CSS3
+- VsCode
+- Vercel
