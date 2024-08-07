@@ -19,7 +19,7 @@ const About = () => {
         <p className='mb-2 text-white text-sm md:text-base'>{t.description[0]}</p>
         <p className='text-white text-sm md:text-base'>{t.description[1]}</p>
       </div>
-      <div className='my-3 md:my-0 grid grid-cols-1 md:grid-rows-2 gap-2'>
+      <div className='my-3 md:my-0 grid grid-cols-1 md:grid-rows-2 gap-3'>
         <div className='flex flex-row gap-3'>
           <div className='md:relative w-1/2 md:w-1/2 h-full'>
             <img src={Perfil} alt="Foto de perfil" className='md:absolute inset-0 w-full h-full object-cover object-top rounded-2xl' />
@@ -35,7 +35,7 @@ const About = () => {
             }
           </ul>
         </div>
-        <div className='mt-1 md:mt-0 py-2 bg-lightbox dark:bg-darkbox rounded-2xl flex flex-col items-center justify-center text-white font-medium'>
+        <div className='py-2 bg-lightbox dark:bg-darkbox rounded-2xl flex flex-col items-center justify-center text-white font-medium'>
           <img src={ArgentinaFlag} alt="Bandera Argentina" className='pb-2' />
           Buenos Aires, Argentina
         </div>

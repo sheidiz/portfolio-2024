@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sheiladiz.vercel.app/sitemap.xml
