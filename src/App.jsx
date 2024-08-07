@@ -15,7 +15,7 @@ function App() {
         <header className="py-2">
           <Navbar />
         </header>
-        <main className="pb-3">
+        <main className="pb-5">
           <About />
           <Languages />
           <Experience />
