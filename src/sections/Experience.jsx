@@ -35,11 +35,15 @@ const Experience = () => {
           <h4 className='mb-1 font-bold text-light'>Ukelele Growth Marketing</h4>
           <div className="flex justify-center">
             <div className="space-y-6 border-l-2 border-dashed">
-              {t.work.map((item, i)=>(
-                <div key={i} className="relative w-full">
+              {t.work.map((item, index)=>(
+                <div key={index} className="relative w-full">
                 <div className="ml-6">
                   <h4 className="font-semibold text-light">{item.title}</h4>
-                  <p className="mt-1 max-w-screen-sm text-sm text-light/60">{item.description}</p>
+                  <ul className="list-disc mt-1 ml-3 max-w-screen-sm text-sm text-light/60">
+                    {item.description.map((l,i) =>(
+                      <li key={i}>{l}</li>
+                    ))}
+                  </ul>
                   <span className="mt-1 block text-sm font-semibold text-quaternary/50">{item.dates}</span>
                 </div>
               </div>

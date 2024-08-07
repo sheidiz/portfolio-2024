@@ -18,15 +18,19 @@ const Projects = () => {
           <div key={i} className="bg-tertiary dark:bg-secondary rounded-2xl p-4 flex flex-col items-center justify-evenly">
             <h6 className='mb-1 text-quaternary font-semibold text-xl'>{p.title}</h6>
             <p className='text-light text-center text-sm'>{p.description}</p>
-            <ul className='my-2 flex flex-wrap justify-center gap-2'>
+            <div className='mt-5 relative h-52 w-4/5 mx-auto'>
+              <img src={p.image2} alt={p.title + "2"} className='h-44 absolute top-1 left-44 md:left-20 rotate-3 shadow-xl z-10 duration-150 hover:scale-110 hover:z-30' />
+              <img src={p.image1} alt={p.title + "1"} className='h-44 absolute top-0 -left-1 shadow-xl z-20 duration-150 hover:scale-110' />
+            </div>
+            <ul className='mb-2 flex flex-wrap justify-center gap-2'>
               {p.technologies.map((tech, i) => (
                 <li key={i} className='rounded-2xl bg-quaternary px-2 py-1 text-secondary text-xs'>{tech}</li>
               ))}
             </ul>
-            <div className='my-2 flex flex-wrap justify-center gap-2'>
-              {p.web && <a href={p.web}><MdLink /></a>}
-              {p.repository && <a href={p.repository}><FaGithub /></a>}
-              {p.figma && <a href={p.figma}><FaFigma /></a>}
+            <div className='mt-2 flex flex-wrap justify-center gap-4'>
+              {p.web && <a href={p.web} target='_blank' className='hover:scale-110'><MdLink /></a>}
+              {p.repository && <a href={p.repository} target='_blank' className='hover:scale-110'><FaGithub /></a>}
+              {p.figma && <a href={p.figma} target='_blank' className='hover:scale-110'><FaFigma /></a>}
             </div>
           </div>
         ))}

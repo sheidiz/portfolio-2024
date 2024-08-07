@@ -8,7 +8,7 @@ const translations = {
     title: "Java Full Stack Developer",
     description: [
       "Looking out for my first job as a Developer, where I can contribute with my skills and knowledge in a dynamic workplace.",
-      "I enjoy facing new challenges and colaborate on projects that generate a positive impact on people's live. I'm open to new oportunities and I'm excited in exploring how can I add to innovative teams."
+      "I enjoy facing new challenges and colaborate on projects that generate a positive impact on people's lives. I'm open to new oportunities and I'm excited in exploring how can I contribute to innovative teams."
     ],
     education: [
       {
@@ -31,7 +31,7 @@ const translations = {
         title: "Associate Degree in Programming",
         instituion: "Universidad Tecnológica Nacional",
         description: [
-          "Focus on software programming and application development.",
+          "An associate degree in computer programming with focus on software programming and application development.",
         ],
         dates: "February 2018 - December 2019"
       }
@@ -61,6 +61,8 @@ const translations = {
       {
         title: "CheLaburo",
         description: "Platform for hiring home services in Buenos Aires, Argentina. It allows users to publish and search for available services, connecting those who need services with local providers.",
+        image1: "/src/assets/images/chelaburo-1.png",
+        image2: "/src/assets/images/chelaburo-2.png",
         technologies: [
           "Spring",
           "Spring JPA",
@@ -79,6 +81,8 @@ const translations = {
       {
         title: "WikiNook",
         description: "My first React App of the Animal Crossing game, powered by the Nookipedia API. Features filtering, search, and pagination for enhanced user experience.",
+        image1: "/src/assets/images/wikinook-1.png",
+        image2: "/src/assets/images/wikinook-2.png",
         technologies: [
           "React",
           "Tailwind",
@@ -88,7 +92,7 @@ const translations = {
           "Fetch Api"
         ],
         repository: "https://github.com/sheidiz/wikinook",
-        web: "wikinook.vercel.app",
+        web: "https://wikinook.vercel.app/",
         figma: "",
       },
     ]
@@ -139,7 +143,7 @@ const translations = {
           "Desarrollo de estrategias digitales para mejorar la conversión y eficiencia operativa.",
           "Planificación y ejecución de campañas de marketing."
         ],
-        dates: "March 2020 - September 2022"
+        dates: "Marzo 2020 - Septiembre 2022"
       },
       {
         title: "Profesora de Email Marketing & Automation para Municipalidad Venado Tuerto",
@@ -148,13 +152,15 @@ const translations = {
           "Capacitación en estrategias de marketing digital y automatización.",
           "Creación de contenido educativo y actividades prácticas."
         ],
-        dates: "April 2022"
+        dates: "Abril 2022"
       }
     ],
     projects: [
       {
         title: "CheLaburo",
         description: "Plataforma para la contratación de servicios en Buenos Aires, Argentina. Permite a los usuarios publicar y buscar servicios, conectando a quienes necesitan servicios con proveedores locales.",
+        image1: "/src/assets/images/chelaburo-1.png",
+        image2: "/src/assets/images/chelaburo-2.png",
         technologies: [
           "Spring",
           "Spring JPA",
@@ -173,6 +179,8 @@ const translations = {
       {
         title: "WikiNook",
         description: "Mi primer aplicación en React sobre el juego Animal Crossing, utilizando la API de Nookipedia. Incluye filtros, búsqueda y paginación para mejorar la experiencia del usuario.",
+        image1: "/src/assets/images/wikinook-1.png",
+        image2: "/src/assets/images/wikinook-2.png",
         technologies: [
           "React",
           "Tailwind",
@@ -182,7 +190,7 @@ const translations = {
           "Fetch Api"
         ],
         repository: "https://github.com/sheidiz/wikinook",
-        web: "wikinook.vercel.app",
+        web: "https://wikinook.vercel.app/",
         figma: "",
       },
     ]
