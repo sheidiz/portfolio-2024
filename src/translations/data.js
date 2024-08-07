@@ -13,7 +13,7 @@ const translations = {
     education: [
       {
         title: "Bootcamp - Full Stack Java Developer",
-        instituion: "Coding Dojo",
+        institution: "Coding Dojo",
         description: [
           "An intensive bootcamp that provided training in frontend and backend technologies such as HTML, CSS, Java, Spring, and Java Server Pages.",
         ],
@@ -21,7 +21,7 @@ const translations = {
       },
       {
         title: "Full Stack Java Developer",
-        instituion: "EducacionIT",
+        institution: "EducacionIT",
         description: [
           "Specialized course in the development of full stack applications with Java. It included the creation and development of applications with Java, JDBC, MySQL and React.",
         ],
@@ -29,7 +29,7 @@ const translations = {
       },
       {
         title: "Associate Degree in Programming",
-        instituion: "Universidad Tecnológica Nacional",
+        institution: "Universidad Tecnológica Nacional",
         description: [
           "An associate degree in computer programming with focus on software programming and application development.",
         ],

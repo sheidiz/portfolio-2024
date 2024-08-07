@@ -9,9 +9,11 @@ export const DarkModeProvider = ({ children }) => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       setIsDarkMode(savedTheme === 'dark');
+      document.body.classList.toggle('dark', savedTheme === 'dark');
     } else {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       setIsDarkMode(prefersDark);
+      document.body.classList.toggle('dark', prefersDark);
     }
   }, []);
 

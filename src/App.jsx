@@ -11,7 +11,7 @@ function App() {
   const { isDarkMode } = useContext(DarkModeContext); 
 
   return (
-      <div>
+      <div className={isDarkMode ? 'dark' : ''}>
         <header className="py-2">
           <Navbar />
         </header>
