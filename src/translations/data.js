@@ -1,3 +1,8 @@
+import WikiNook1 from "../assets/images/wikinook-1.png";
+import WikiNook2 from "../assets/images/wikinook-2.png";
+import CheLaburo1 from "../assets/images/chelaburo-1.png";
+import CheLaburo2 from "../assets/images/chelaburo-2.png";
+
 const translations = {
   en: {
     menu: {
@@ -61,8 +66,8 @@ const translations = {
       {
         title: "CheLaburo",
         description: "Platform for hiring home services in Buenos Aires, Argentina. It allows users to publish and search for available services, connecting those who need services with local providers.",
-        image1: "/src/assets/images/chelaburo-1.png",
-        image2: "/src/assets/images/chelaburo-2.png",
+        image1: CheLaburo1,
+        image2: CheLaburo2,
         technologies: [
           "Spring",
           "Spring JPA",
@@ -81,8 +86,8 @@ const translations = {
       {
         title: "WikiNook",
         description: "My first React App of the Animal Crossing game, powered by the Nookipedia API. Features filtering, search, and pagination for enhanced user experience.",
-        image1: "/src/assets/images/wikinook-1.png",
-        image2: "/src/assets/images/wikinook-2.png",
+        image1: WikiNook1,
+        image2: WikiNook2,
         technologies: [
           "React",
           "Tailwind",
@@ -159,8 +164,8 @@ const translations = {
       {
         title: "CheLaburo",
         description: "Plataforma para la contratación de servicios en Buenos Aires, Argentina. Permite a los usuarios publicar y buscar servicios, conectando a quienes necesitan servicios con proveedores locales.",
-        image1: "/src/assets/images/chelaburo-1.png",
-        image2: "/src/assets/images/chelaburo-2.png",
+        image1: CheLaburo1,
+        image2: CheLaburo2,
         technologies: [
           "Spring",
           "Spring JPA",
@@ -179,8 +184,8 @@ const translations = {
       {
         title: "WikiNook",
         description: "Mi primer aplicación en React sobre el juego Animal Crossing, utilizando la API de Nookipedia. Incluye filtros, búsqueda y paginación para mejorar la experiencia del usuario.",
-        image1: "/src/assets/images/wikinook-1.png",
-        image2: "/src/assets/images/wikinook-2.png",
+        image1: WikiNook1,
+        image2: WikiNook2,
         technologies: [
           "React",
           "Tailwind",
