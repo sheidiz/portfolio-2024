@@ -5,8 +5,8 @@ import Perfil from "../assets/Perfil.jpeg";
 import ArgentinaFlag from "../assets/Argentina.png";
 import { FaFileDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import CvEn from '../assets/CV SHEILA DIZ [en].pdf';
-import CvEs from '../assets/CV SHEILA DIZ [es].pdf';
+import CvEn from '../assets/Sheila Diz - Resume.pdf';
+import CvEs from '../assets/Sheila Diz - CV.pdf';
 
 const About = () => {
   const { language } = useLanguage();
