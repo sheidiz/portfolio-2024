@@ -19,7 +19,7 @@ const Projects = () => {
             <h6 className='mb-1 text-quaternary font-semibold text-xl'>{p.title}</h6>
             <p className='text-light text-center text-sm select-none'>{p.description}</p>
             <div className='mt-5 relative h-44 md:h-52 w-full lg:w-4/5 mx-auto'>
-              <img src={p.image2} alt={p.title + "2"} className='h-36 md:h-44 absolute top-1 left-28 md:left-20 rotate-3 shadow-xl z-10 duration-150 hover:scale-110 hover:z-30' />
+              <img src={p.image2} alt={p.title + "2"} className='h-36 md:h-44 absolute top-1 left-20 sm:left-28 md:left-20 rotate-3 shadow-xl z-10 duration-150 hover:scale-110 hover:z-30' />
               <img src={p.image1} alt={p.title + "1"} className='h-36 md:h-44 absolute top-0 -left-1 shadow-xl z-20 duration-150 hover:scale-110' />
             </div>
             <ul className='mb-2 flex flex-wrap justify-center gap-2'>

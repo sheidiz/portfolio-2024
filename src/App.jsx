@@ -20,10 +20,10 @@ function App() {
         <meta name="keywords" content="Sheila Diz, desarrolladora, full stack, back end, java, spring, trainee, empleo, trabajo, programación" />
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
-      <header className="py-2">
+      <header className="py-2 font-primary">
         <Navbar />
       </header>
-      <main className="pb-5">
+      <main className="pb-5 font-primary">
         <About />
         <Languages />
         <Experience />

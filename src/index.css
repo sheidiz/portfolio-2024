@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +6,8 @@
 body {
     --dot-bg: #f2f2fb;
     --dot-color: #26272B;
-    --dot-size: 1.5px;
-    --dot-space: 22px;
+    --dot-size: 1px;
+    --dot-space: 28px;
     background:
         linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
@@ -15,9 +16,9 @@ body {
 
 body.dark {
     --dot-bg: #26272B;
-    --dot-color: #f2f2fb;
-    --dot-size: 1.5px;
-    --dot-space: 22px;
+    --dot-color: rgba(242,242,251,0.5);
+    --dot-size: 1px;
+    --dot-space: 28px;
     background:
         linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),

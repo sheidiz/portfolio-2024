@@ -21,7 +21,7 @@ export default {
         "gray": "#64748B"
       },
       fontFamily: {
-
+        "primary":['Montserrat', 'sans-serif'],
       },
     },
   },

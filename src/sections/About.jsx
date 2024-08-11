@@ -5,6 +5,8 @@ import Perfil from "../assets/Perfil.jpeg";
 import ArgentinaFlag from "../assets/Argentina.png";
 import { FaFileDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import CvEn from '../assets/CV SHEILA DIZ [en].pdf';
+import CvEs from '../assets/CV SHEILA DIZ [es].pdf';
 
 const About = () => {
   const { language } = useLanguage();
@@ -29,9 +31,9 @@ const About = () => {
             <li><a href="https://github.com/sheidiz" target="_blank"><FaGithub className='inline mb-1 mr-1' /> GitHub</a></li>
             <li><a href="mailto:dizsheila07@gmail.com" target="_blank"><MdEmail className='inline mb-1 mr-1' /> Email</a></li>
             {language == "es" ?
-              <li><a href="/src/assets/CV SHEILA DIZ [es].pdf" download="Diz Sheila - CV.pdf"><FaFileDownload className='inline mb-1 mr-1' /> Descargar CV</a></li>
+              <li><a href={CvEs} download="Diz Sheila - CV.pdf"><FaFileDownload className='inline mb-1 mr-1' /> Descargar CV</a></li>
               :
-              <li><a href="/src/assets/CV SHEILA DIZ [en].pdf" download="Diz Sheila - Resume.pdf"><FaFileDownload className='inline mb-1 mr-1' /> Download Resume</a></li>
+              <li><a href={CvEn} download="Diz Sheila - Resume.pdf"><FaFileDownload className='inline mb-1 mr-1' /> Download Resume</a></li>
             }
           </ul>
         </div>
