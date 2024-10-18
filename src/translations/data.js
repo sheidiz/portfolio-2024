@@ -69,9 +69,11 @@ const translations = {
       {
         title: "Nativo",
         description: "Fintech platform that facilitates transactions in rural communities. It allows to make payments using QR codes, request microcredit, and receive/make donations to other Nativo users.",
-        image1: Nativo1,
-        image2: Nativo2,
-        image3: Nativo3,
+        images: [
+          Nativo1,
+          Nativo2,
+          Nativo3
+        ],
         technologies: [
           "Java",
           "Spring",
@@ -88,14 +90,16 @@ const translations = {
         ],
         repository: "https://github.com/sheidiz/Nativo-Fintech",
         web: "",
-        video:"https://youtu.be/qqw0mvAC-EQ?t=1377",
+        video: "https://youtu.be/qqw0mvAC-EQ?t=1377",
         figma: "",
       },
       {
         title: "CheLaburo",
         description: "Platform for hiring home services in Buenos Aires, Argentina. It allows users to publish and search for available services, connecting those who need services with local providers.",
-        image1: CheLaburo1,
-        image2: CheLaburo2,
+        images: [
+          CheLaburo1,
+          CheLaburo2
+        ],
         technologies: [
           "Java",
           "Spring",
@@ -115,8 +119,10 @@ const translations = {
       {
         title: "WikiNook",
         description: "My first React App of the Animal Crossing game, powered by the Nookipedia API. Features filtering, search, and pagination for enhanced user experience.",
-        image1: WikiNook1,
-        image2: WikiNook2,
+        images: [
+          WikiNook1,
+          WikiNook2
+        ],
         technologies: [
           "React",
           "JavaScript",
@@ -194,9 +200,11 @@ const translations = {
       {
         title: "Nativo",
         description: "Plataforma fintech que facilita las transacciones en comunidades rurales. Permite realizar pagos por QR, solicitar microcréditos y dar/recibir donaciones de otros usuarios de Nativo.",
-        image1: Nativo1,
-        image2: Nativo2,
-        image3: Nativo3,
+        images: [
+          Nativo1,
+          Nativo2,
+          Nativo3
+        ],
         technologies: [
           "Java",
           "Spring",
@@ -213,14 +221,16 @@ const translations = {
         ],
         repository: "https://github.com/sheidiz/Nativo-Fintech",
         web: "",
-        video:"https://youtu.be/qqw0mvAC-EQ?t=1377",
+        video: "https://youtu.be/qqw0mvAC-EQ?t=1377",
         figma: "",
       },
       {
         title: "CheLaburo",
         description: "Plataforma para la contratación de servicios en Buenos Aires, Argentina. Permite a los usuarios publicar y buscar servicios, conectando a quienes necesitan servicios con proveedores locales.",
-        image1: CheLaburo1,
-        image2: CheLaburo2,
+        images: [
+          CheLaburo1,
+          CheLaburo2
+        ],
         technologies: [
           "Java",
           "Spring",
@@ -240,8 +250,10 @@ const translations = {
       {
         title: "WikiNook",
         description: "Mi primer aplicación en React sobre el juego Animal Crossing, utilizando la API de Nookipedia. Incluye filtros, búsqueda y paginación para mejorar la experiencia del usuario.",
-        image1: WikiNook1,
-        image2: WikiNook2,
+        images: [
+          WikiNook1,
+          WikiNook2
+        ],
         technologies: [
           "React",
           "JavaScript",
