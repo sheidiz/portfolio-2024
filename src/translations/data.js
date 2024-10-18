@@ -46,6 +46,18 @@ const translations = {
     ],
     work: [
       {
+        title: "Full Stack Developer (Tech Training)",
+        company: "Igrowker - Acelerando Juniors IT",
+        description: [
+          "Participated in a 5-week tech training with Igrowker, collaborating with a cross-functional team (frontend, backend, UX/UI, QA).",
+          "Developed an MVP for a digital banking and virtual wallet solution to improve financial access in rural areas.",
+          "Contributed to frontend (React, ViteJS, Tailwind) and backend (Java, Spring) development.",
+          "Implemented security features, authentication, and encryption.",
+          "Worked with GitHub Projects, had weekly meetings, and deployed apps on Railway (backend) and Netlify (frontend).",
+        ],
+        dates: "September 2024 - October 2024"
+      },
+      {
         title: "Senior Marketing Automation Analyst",
         company: "Ukelele Growth Company",
         description: [
@@ -55,15 +67,6 @@ const translations = {
         ],
         dates: "March 2020 - September 2022"
       },
-      {
-        title: "Email Marketing & Automation Instructor",
-        instituion: "Ukelele Growth Company",
-        description: [
-          "Delivered workshops on email marketing and digital automation strategies.",
-          "Developed educational projects and provided hands-on training sessions."
-        ],
-        dates: "April 2022"
-      }
     ],
     projects: [
       {
@@ -177,6 +180,18 @@ const translations = {
     ],
     work: [
       {
+        title: "Desarrolladora Full Stack (Tech Training)",
+        company: "Igrowker - Acelerando Juniors IT",
+        description: [
+          "Participé en un entrenamiento técnico de 5 semanas con Igrowker, colaborando con un equipo multidisciplinario (frontend, backend, UX/UI, QA).",
+          "Desarrollamos un MVP para una solución de banca digital y billetera virtual para mejorar el acceso financiero en zonas rurales.",
+          "Contribuí al desarrollo del frontend (React, ViteJS, Tailwind) y backend (Java, Spring).",
+          "Implementé funciones de seguridad, autenticación y cifrado.",
+          "Trabaje con GitHub Projects, reuniones semanales y realizamos los despliegues en Railway (backend) y Netlify (frontend)."
+        ],
+        dates: "Septiembre 2024 - Octubre 2024"
+      },
+      {
         title: "Analista SR de Automation Marketing",
         company: "Ukelele Growth Company",
         description: [
@@ -186,15 +201,6 @@ const translations = {
         ],
         dates: "Marzo 2020 - Septiembre 2022"
       },
-      {
-        title: "Profesora de Email Marketing & Automation para Municipalidad Venado Tuerto",
-        instituion: "Ukelele Growth Company",
-        description: [
-          "Capacitación en estrategias de marketing digital y automatización.",
-          "Creación de contenido educativo y actividades prácticas."
-        ],
-        dates: "Abril 2022"
-      }
     ],
     projects: [
       {
