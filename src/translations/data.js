@@ -2,6 +2,9 @@ import WikiNook1 from "../assets/images/wikinook-1.png";
 import WikiNook2 from "../assets/images/wikinook-2.png";
 import CheLaburo1 from "../assets/images/chelaburo-1.png";
 import CheLaburo2 from "../assets/images/chelaburo-2.png";
+import Nativo1 from "../assets/images/nativo-1.png";
+import Nativo2 from "../assets/images/nativo-2.png";
+import Nativo3 from "../assets/images/nativo-3.png";
 
 const translations = {
   en: {
@@ -64,11 +67,37 @@ const translations = {
     ],
     projects: [
       {
+        title: "Nativo",
+        description: "Fintech platform that facilitates transactions in rural communities. It allows to make payments using QR codes, request microcredit, and receive/make donations to other Nativo users.",
+        image1: Nativo1,
+        image2: Nativo2,
+        image3: Nativo3,
+        technologies: [
+          "Java",
+          "Spring",
+          "Spring Security",
+          "Spring Email",
+          "JWT",
+          "JUnit",
+          "Swagger",
+          "PostreSQL",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Zustand"
+        ],
+        repository: "https://github.com/sheidiz/Nativo-Fintech",
+        web: "",
+        video:"https://youtu.be/qqw0mvAC-EQ?t=1377",
+        figma: "",
+      },
+      {
         title: "CheLaburo",
         description: "Platform for hiring home services in Buenos Aires, Argentina. It allows users to publish and search for available services, connecting those who need services with local providers.",
         image1: CheLaburo1,
         image2: CheLaburo2,
         technologies: [
+          "Java",
           "Spring",
           "Spring JPA",
           "Spring MVC",
@@ -90,6 +119,7 @@ const translations = {
         image2: WikiNook2,
         technologies: [
           "React",
+          "JavaScript",
           "Tailwind",
           "Next.js",
           "React Paginate",
@@ -162,11 +192,37 @@ const translations = {
     ],
     projects: [
       {
+        title: "Nativo",
+        description: "Plataforma fintech que facilita las transacciones en comunidades rurales. Permite realizar pagos por QR, solicitar microcréditos y dar/recibir donaciones de otros usuarios de Nativo.",
+        image1: Nativo1,
+        image2: Nativo2,
+        image3: Nativo3,
+        technologies: [
+          "Java",
+          "Spring",
+          "Spring Security",
+          "Spring Email",
+          "JWT",
+          "JUnit",
+          "Swagger",
+          "PostreSQL",
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Zustand"
+        ],
+        repository: "https://github.com/sheidiz/Nativo-Fintech",
+        web: "",
+        video:"https://youtu.be/qqw0mvAC-EQ?t=1377",
+        figma: "",
+      },
+      {
         title: "CheLaburo",
         description: "Plataforma para la contratación de servicios en Buenos Aires, Argentina. Permite a los usuarios publicar y buscar servicios, conectando a quienes necesitan servicios con proveedores locales.",
         image1: CheLaburo1,
         image2: CheLaburo2,
         technologies: [
+          "Java",
           "Spring",
           "Spring JPA",
           "Spring MVC",
@@ -175,7 +231,7 @@ const translations = {
           "Tailwind",
           "CSS",
           "JavaScript",
-          "Diseño responsivo"
+          "Responsive Design"
         ],
         repository: "https://github.com/sheidiz/CodingDojo-Project",
         web: "",
@@ -188,6 +244,7 @@ const translations = {
         image2: WikiNook2,
         technologies: [
           "React",
+          "JavaScript",
           "Tailwind",
           "Next.js",
           "React Paginate",
