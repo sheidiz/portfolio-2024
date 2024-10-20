@@ -70,7 +70,11 @@ const About = () => {
             variants={item}
             className="flex h-full w-full items-center justify-center rounded-2xl border border-secondary bg-lightbox p-4 text-2xl text-white dark:bg-darkbox min-[500px]:text-3xl lg:text-4xl"
           >
-            <a href="https://www.linkedin.com/in/sheila-diz" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/sheila-diz"
+              target="_blank"
+              aria-label="Link LinkedIn"
+            >
               <FaLinkedin className="mb-1 mr-1 inline" />
             </a>
           </motion.li>
@@ -78,7 +82,11 @@ const About = () => {
             variants={item}
             className="flex h-full w-full items-center justify-center rounded-2xl border border-secondary bg-lightbox p-4 text-2xl text-white dark:bg-darkbox min-[500px]:text-3xl lg:text-4xl"
           >
-            <a href="https://github.com/sheidiz" target="_blank">
+            <a
+              href="https://github.com/sheidiz"
+              target="_blank"
+              aria-label="Link GitHub"
+            >
               <FaGithub className="mb-1 mr-1 inline" />
             </a>
           </motion.li>
@@ -86,7 +94,11 @@ const About = () => {
             variants={item}
             className="flex h-full w-full items-center justify-center rounded-2xl border border-secondary bg-lightbox p-4 text-2xl text-white dark:bg-darkbox min-[500px]:text-3xl lg:text-4xl"
           >
-            <a href="mailto:dizsheila07@gmail.com" target="_blank">
+            <a
+              href="mailto:dizsheila07@gmail.com"
+              target="_blank"
+              aria-label="Link Mail"
+            >
               <MdEmail className="mb-1 mr-1 inline" />
             </a>
           </motion.li>

@@ -55,22 +55,42 @@ export const ProjectMobile = ({ project }) => {
       </ul>
       <div className="mt-2 flex flex-wrap justify-center gap-4 text-lg text-light">
         {repository && (
-          <a href={repository} target="_blank" className="hover:scale-110">
+          <a
+            href={repository}
+            target="_blank"
+            className="hover:scale-110"
+            aria-label={title + " Link GitHub"}
+          >
             <FaGithub />
           </a>
         )}
         {web && (
-          <a href={web} target="_blank" className="hover:scale-110">
+          <a
+            href={web}
+            target="_blank"
+            className="hover:scale-110"
+            aria-label={title + " Link Demo"}
+          >
             <MdLink />
           </a>
         )}
         {figma && (
-          <a href={figma} target="_blank" className="hover:scale-110">
+          <a
+            href={figma}
+            target="_blank"
+            className="hover:scale-110"
+            aria-label={title + " Link Figma"}
+          >
             <FaFigma />
           </a>
         )}
         {video && (
-          <a href={video} target="_blank" className="hover:scale-110">
+          <a
+            href={video}
+            target="_blank"
+            className="hover:scale-110"
+            aria-label={title + " Link Video"}
+          >
             <FaYoutube />
           </a>
         )}

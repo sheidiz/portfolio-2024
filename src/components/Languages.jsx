@@ -34,28 +34,30 @@ const Languages = () => {
         </h3>
         <ul className="mt-4 flex flex-wrap gap-4">
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={htmlIcon} className="h-6" /> HTML
+            <img src={htmlIcon} className="h-6" aria-hidden="true" /> HTML
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={cssIcon} className="h-6" /> CSS
+            <img src={cssIcon} className="h-6" aria-hidden="true" /> CSS
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={jsIcon} className="h-6" /> JavaScript
+            <img src={jsIcon} className="h-6" aria-hidden="true" /> JavaScript
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={reactIcon} className="h-6" /> React
+            <img src={reactIcon} className="h-6" aria-hidden="true" /> React
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={viteIcon} className="h-6" /> Vite
+            <img src={viteIcon} className="h-6" aria-hidden="true" /> Vite
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={bootstrapIcon} className="h-6" /> Bootstrap
+            <img src={bootstrapIcon} className="h-6" aria-hidden="true" />{" "}
+            Bootstrap
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={tailwindIcon} className="h-6" /> Tailwind
+            <img src={tailwindIcon} className="h-6" aria-hidden="true" />{" "}
+            Tailwind
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={figmaIcon} className="h-6" /> Figma
+            <img src={figmaIcon} className="h-6" aria-hidden="true" /> Figma
           </li>
         </ul>
       </BentoContainer>
@@ -70,28 +72,29 @@ const Languages = () => {
         </h3>
         <ul className="mt-4 flex flex-wrap gap-3 sm:gap-4">
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={javaIcon} className="h-6" /> Java
+            <img src={javaIcon} className="h-6" aria-hidden="true" /> Java
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={springIcon} className="h-6" /> Spring
+            <img src={springIcon} className="h-6" aria-hidden="true" /> Spring
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={gitIcon} className="h-6" /> Git
+            <img src={gitIcon} className="h-6" aria-hidden="true" /> Git
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={swaggerIcon} className="h-6" /> Swagger
+            <img src={swaggerIcon} className="h-6" aria-hidden="true" /> Swagger
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={mysqlIcon} className="h-6" /> MySQL
+            <img src={mysqlIcon} className="h-6" aria-hidden="true" /> MySQL
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={postgresqlIcon} className="h-6" /> PostgreSQL
+            <img src={postgresqlIcon} className="h-6" aria-hidden="true" />{" "}
+            PostgreSQL
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={postmanIcon} className="h-6" /> Postman
+            <img src={postmanIcon} className="h-6" aria-hidden="true" /> Postman
           </li>
           <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={junitIcon} className="h-6" /> JUnit
+            <img src={junitIcon} className="h-6" aria-hidden="true" /> JUnit
           </li>
         </ul>
       </BentoContainer>
