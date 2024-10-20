@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="mx-3 mt-3 grid max-w-4xl grid-cols-1 text-white md:mx-auto md:grid-cols-2 md:gap-x-3"
+      className="mx-3 mt-3 grid max-w-[1400px] grid-cols-1 text-white md:mx-auto md:grid-cols-2 md:gap-x-3 md:px-2 2xl:px-0"
     >
       <div className="education-section rounded-2xl bg-tertiary p-4 dark:bg-secondary">
         <h3 className="text-xl font-medium">

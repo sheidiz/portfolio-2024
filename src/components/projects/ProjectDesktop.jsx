@@ -12,16 +12,16 @@ export const ProjectDesktop = ({ project }) => {
       <p className="select-none text-center text-sm text-light">
         {description}
       </p>
-      <div className="relative mx-auto mt-5 h-44 w-64 md:h-52 md:w-full lg:w-4/5">
+      <div className="relative mx-auto mt-5 h-44 w-64 md:h-52 md:w-full min-[1100px]:flex min-[1100px]:justify-evenly">
         <img
           src={images[1]}
           alt={title + "2"}
-          className="absolute left-[18%] top-1 z-10 h-36 rotate-3 shadow-xl duration-150 hover:z-30 hover:scale-110 sm:left-28 md:left-20 md:h-44"
+          className="absolute left-[18%] top-0 z-10 h-36 shadow-xl duration-150 hover:z-30 hover:scale-110 sm:left-28 md:left-20 md:h-44 lg:left-44 min-[1100px]:static min-[1100px]:left-[50%]"
         />
         <img
           src={images[0]}
           alt={title + "1"}
-          className="absolute -left-2 top-0 z-20 h-36 shadow-xl duration-150 hover:scale-110 md:h-44"
+          className="absolute -left-2 top-0 z-20 h-36 shadow-xl duration-150 hover:scale-110 md:h-44 min-[1100px]:static"
         />
       </div>
       <ul className="mb-2 flex flex-wrap justify-center gap-2">

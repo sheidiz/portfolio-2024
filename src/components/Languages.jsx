@@ -23,7 +23,7 @@ const Languages = () => {
   return (
     <div className="col-span-2 grid grid-cols-1 gap-y-3 md:mx-auto md:mt-3 md:grid-cols-2 md:gap-x-3 lg:col-span-1 lg:mt-0 lg:grid-cols-1">
       <div className="rounded-2xl bg-lightbox p-4 text-white dark:bg-darkbox">
-        <h3 className="text-xl font-semibold">
+        <h3 className="text-xl font-medium">
           Frontend {language == "es" ? "y herramientas" : "and tools"}
         </h3>
         <ul className="mt-4 flex flex-wrap gap-4">
@@ -54,7 +54,7 @@ const Languages = () => {
         </ul>
       </div>
       <div className="rounded-2xl bg-lightbox p-4 text-white dark:bg-darkbox">
-        <h3 className="text-xl font-semibold">
+        <h3 className="text-xl font-medium">
           Backend {language == "es" ? "y herramientas" : "and tools"}
         </h3>
         <ul className="mt-4 flex flex-wrap gap-3 sm:gap-4">

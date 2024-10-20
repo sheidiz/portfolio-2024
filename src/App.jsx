@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { DarkModeContext } from "./contexts/DarkModeContext";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/layout/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
