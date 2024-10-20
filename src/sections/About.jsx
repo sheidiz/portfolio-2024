@@ -32,18 +32,18 @@ const About = () => {
           alt="Foto de perfil"
           className="h-auto max-h-full w-1/2 rounded-2xl object-cover sm:w-full md:w-3/4"
         />
-        <ul className="flex w-1/2 md:w-1/4 flex-col justify-between gap-y-2 md:col-span-1 md:gap-y-3">
-          <li className="flex h-full w-full items-center justify-center rounded-2xl bg-lightbox p-4 text-2xl lg:text-4xl text-white dark:bg-darkbox min-[500px]:text-3xl">
+        <ul className="flex w-1/2 flex-col justify-between gap-y-2 md:col-span-1 md:w-1/4 md:gap-y-3">
+          <li className="flex h-full w-full items-center justify-center rounded-2xl bg-lightbox p-4 text-2xl text-white dark:bg-darkbox min-[500px]:text-3xl lg:text-4xl">
             <a href="https://www.linkedin.com/in/sheila-diz" target="_blank">
               <FaLinkedin className="mb-1 mr-1 inline" />
             </a>
           </li>
-          <li className="flex h-full w-full items-center justify-center rounded-2xl bg-lightbox p-4 text-2xl lg:text-4xl text-white dark:bg-darkbox min-[500px]:text-3xl">
+          <li className="flex h-full w-full items-center justify-center rounded-2xl bg-lightbox p-4 text-2xl text-white dark:bg-darkbox min-[500px]:text-3xl lg:text-4xl">
             <a href="https://github.com/sheidiz" target="_blank">
               <FaGithub className="mb-1 mr-1 inline" />
             </a>
           </li>
-          <li className="flex h-full w-full items-center justify-center rounded-2xl bg-lightbox p-4 text-2xl lg:text-4xl text-white dark:bg-darkbox min-[500px]:text-3xl">
+          <li className="flex h-full w-full items-center justify-center rounded-2xl bg-lightbox p-4 text-2xl text-white dark:bg-darkbox min-[500px]:text-3xl lg:text-4xl">
             <a href="mailto:dizsheila07@gmail.com" target="_blank">
               <MdEmail className="mb-1 mr-1 inline" />
             </a>

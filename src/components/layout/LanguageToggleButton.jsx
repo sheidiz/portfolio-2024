@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useLanguage } from "../contexts/LanguageContext";
-import EsFlag from "../assets/es-flag.png";
-import EnFlag from "../assets/en-flag.png";
+import React from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import EsFlag from "../../assets/es-flag.png";
+import EnFlag from "../../assets/en-flag.png";
 
 const LanguageToggleButton = () => {
   const { language, switchLanguage } = useLanguage();

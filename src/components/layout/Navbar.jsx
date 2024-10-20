@@ -2,8 +2,8 @@ import React from "react";
 import translations from "../../translations/data";
 import { useLanguage } from "../../contexts/LanguageContext";
 
-import DarkModeToggleButton from "../DarkModeToggleButton";
-import LanguageToggleButton from "../LanguageToggleButton";
+import DarkModeToggleButton from "./DarkModeToggleButton";
+import LanguageToggleButton from "./LanguageToggleButton";
 
 const Navbar = () => {
   const { language } = useLanguage();
