@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import translations from '../translations/data';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -6,12 +6,12 @@ import DarkModeToggleButton from './DarkModeToggleButton';
 import LanguageToggleButton from './LanguageToggleButton';
 
 const Navbar = () => {
-  const { language, switchLanguage } = useLanguage();
+  const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <nav className='mx-3 md:mx-auto md:w-fit flex flex-col md:flex-row gap-y-2 align-middle items-center md:justify-center rounded-full px-4 md:px-36 py-2 md:py-3 bg-tertiary/90 dark:bg-primary/90'>
-      <ul className='flex justify-evenly md:justify-center items-center gap-x-4 text-white'>
+    <nav className='sm:mx-1 w-full max-w-[1400px] lg:mx-auto flex flex-col min-[500px]:flex-row gap-y-2 align-middle items-center min-[500px]:justify-between rounded-2xl px-2 min-[500px]:px-4 py-2 md:py-3 bg-tertiary/90 dark:bg-primary/90'>
+      <ul className='w-full flex justify-between min-[500px]:justify-start items-center gap-x-4 text-white'>
         <li className='font-semibold hover:scale-[102%]'><a href="#about">{t.menu.about}</a></li>
         <li className='font-semibold hover:scale-[102%]'><a href="#experience">{t.menu.experience}</a></li>
         <li className='font-semibold hover:scale-[102%]'><a href="#projects">{t.menu.projects}</a></li>

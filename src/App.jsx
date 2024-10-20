@@ -4,7 +4,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async"
 import Navbar from "./components/Navbar"
 import ScrollToTopButton from "./components/ScrollToTopButton"
 import About from "./sections/About"
-import Languages from "./sections/Languages"
 import Experience from "./sections/Experience"
 import Projects from "./sections/Projects"
 
@@ -20,12 +19,11 @@ function App() {
         <meta name="keywords" content="Sheila Diz, desarrolladora, full stack, back end, java, spring, trainee, empleo, trabajo, programación" />
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
-      <header className="py-2 font-primary">
+      <header className="p-2 font-primary">
         <Navbar />
       </header>
       <main className="pb-5 font-primary">
         <About />
-        <Languages />
         <Experience />
         <Projects />
         <ScrollToTopButton />

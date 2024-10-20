@@ -1,5 +1,4 @@
-import React from 'react'
-import Accordion from '../components/Accordion';
+import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import translations from '../translations/data';
 import { FaRegCircleCheck } from 'react-icons/fa6';
@@ -21,7 +20,7 @@ const Experience = () => {
                   <h4 className="font-bold text-light">{item.title}</h4>
                   <p className="mt-1 max-w-screen-sm text-sm text-light/80">{item.institution}</p>
                   <p className="mt-1 max-w-screen-sm text-sm text-light/60">{item.description}</p>
-                  <span className="mt-1 block text-sm font-semibold text-quaternary/50">{item.dates}</span>
+                  <span className="mt-1 block text-sm font-semibold text-quaternary/75">{item.dates}</span>
                 </div>
               </div>
             ))}
@@ -43,7 +42,7 @@ const Experience = () => {
                       <li key={i}>{l}</li>
                     ))}
                   </ul>
-                  <span className="mt-1 block text-sm font-semibold text-quaternary/50">{item.dates}</span>
+                  <span className="mt-1 block text-sm font-semibold text-quaternary/75">{item.dates}</span>
                 </div>
               </div>
             ))}

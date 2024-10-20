@@ -1,48 +1,38 @@
 import React from 'react'
 import translations from '../translations/data';
 import { useLanguage } from '../contexts/LanguageContext';
-import Perfil from "../assets/Perfil.jpeg";
-import ArgentinaFlag from "../assets/Argentina.png";
-import { FaFileDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
+import Perfil from "../assets/Perfil.png";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
-import CvEn from '../assets/Sheila_Diz_Resume.pdf';
-import CvEs from '../assets/Sheila_Diz_CV.pdf';
+import Languages from '../components/Languages';
 
 const About = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <section id="about" className='max-w-4xl mx-3 mt-3 md:mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-3'>
-      <div className='bg-lightbox dark:bg-darkbox rounded-2xl p-4'>
-        <h1 className='mb-1 text-3xl font-bold text-white'>Sheila Diz</h1>
-        <h2 className='text-xl font-bold text-quaternary/80'>{t.title}</h2>
+    <section id="about" className='max-w-[1400px] mx-3 mt-3 md:mx-auto grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3'>
+      <div className='col-span-2 md:col-span-1 bg-lightbox rounded-2xl p-4'>
+        <h1 className='mb-1 text-2xl md:text-3xl font-bold text-white'>Sheila Diz</h1>
+        <h2 className='md:text-xl font-bold text-quaternary/80'>{t.title}</h2>
         <div className='my-3 w-28 h-2 border-t border-t-white'></div>
         <p className='mb-2 text-white text-sm md:text-base'>{t.description[0]}</p>
         <p className='text-white text-sm md:text-base'>{t.description[1]}</p>
       </div>
-      <div className='my-3 md:my-0 grid grid-cols-1 md:grid-rows-2 gap-3'>
-        <div className='flex flex-row gap-3'>
-          <div className='md:relative w-1/2 md:w-1/2 h-full'>
-            <img src={Perfil} alt="Foto de perfil" className='md:absolute inset-0 w-full h-full object-cover object-top rounded-2xl' />
-          </div>
-          <ul className="w-1/2 md:w-2/3 bg-lightbox dark:bg-darkbox p-4 rounded-2xl flex flex-col gap-y-3 justify-evenly text-white font-semibold">
-            <li><a href="https://www.linkedin.com/in/sheila-diz" target="_blank"><FaLinkedin className='inline mb-1 mr-1' /> LinkedIn</a></li>
-            <li><a href="https://github.com/sheidiz" target="_blank"><FaGithub className='inline mb-1 mr-1' /> GitHub</a></li>
-            <li><a href="mailto:dizsheila07@gmail.com" target="_blank"><MdEmail className='inline mb-1 mr-1' /> Email</a></li>
-            {language == "es" ?
-              <li><a href={CvEs} download="Diz_Sheila_CV.pdf"><FaFileDownload className='inline mb-1 mr-1' /> Descargar CV</a></li>
-              :
-              <li><a href={CvEn} download="Diz_Sheila_Resume.pdf"><FaFileDownload className='inline mb-1 mr-1' /> Download Resume</a></li>
-            }
-          </ul>
-        </div>
-        <div className='py-2 bg-lightbox dark:bg-darkbox rounded-2xl flex flex-col items-center justify-center text-white font-medium'>
-          <img src={ArgentinaFlag} alt="Bandera Argentina" className='pb-2' />
-          Buenos Aires, Argentina
-        </div>
+      <div className='col-span-2 md:col-span-1 w-full h-full flex gap-2 md:gap-3'>
+        <img
+          src={Perfil}
+          alt="Foto de perfil"
+          className="w-2/3 md:w-3/5 sm:w-full h-auto max-h-full object-cover rounded-2xl"
+        />
+        <ul className='w-full flex flex-col justify-between gap-y-2 md:gap-y-3 md:col-span-1'>
+          <li className='w-full h-full flex justify-center items-center bg-lightbox dark:bg-darkbox p-4 text-2xl min-[500px]:text-3xl rounded-2xl text-white'><a href="https://www.linkedin.com/in/sheila-diz" target="_blank"><FaLinkedin className='inline mb-1 mr-1' /></a></li>
+          <li className='w-full h-full flex justify-center items-center bg-lightbox dark:bg-darkbox p-4 text-2xl min-[500px]:text-3xl rounded-2xl text-white'><a href="https://github.com/sheidiz" target="_blank"><FaGithub className='inline mb-1 mr-1' /></a></li>
+          <li className='w-full h-full flex justify-center items-center bg-lightbox dark:bg-darkbox p-4 text-2xl min-[500px]:text-3xl rounded-2xl text-white'><a href="mailto:dizsheila07@gmail.com" target="_blank"><MdEmail className='inline mb-1 mr-1' /></a></li>
+        </ul>
       </div>
-    </section>
+      <Languages />
+    </section >
   )
 }
 
