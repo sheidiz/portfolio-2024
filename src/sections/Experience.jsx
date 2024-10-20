@@ -13,7 +13,12 @@ const Experience = () => {
       id="experience"
       className="mx-3 mt-3 grid max-w-[1400px] grid-cols-1 text-white md:mx-auto md:grid-cols-2 md:gap-x-3 md:px-2 2xl:px-0"
     >
-      <BentoContainer className="">
+      <BentoContainer
+        className=""
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+      >
         <h3 className="text-xl font-medium">
           {language == "es" ? "Educación" : "Education"}
         </h3>
@@ -39,7 +44,12 @@ const Experience = () => {
           </div>
         </div>
       </BentoContainer>
-      <BentoContainer className="mt-3 md:mt-0">
+      <BentoContainer
+        className="mt-3 md:mt-0"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+      >
         <h3 className="text-xl font-medium">
           {language == "es" ? "Experiencia Laboral" : "Work Experience"}
         </h3>

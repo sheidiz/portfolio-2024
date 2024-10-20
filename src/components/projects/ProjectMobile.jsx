@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaFigma, FaGithub, FaYoutube } from "react-icons/fa";
 import { MdLink } from "react-icons/md";
 
@@ -15,7 +16,12 @@ export const ProjectMobile = ({ project }) => {
   } = project;
 
   return (
-    <div className="flex flex-col items-center justify-evenly rounded-2xl border border-secondary bg-primary/80 p-4 hover:bg-primary dark:bg-dm-primary/90 hover:dark:bg-dm-primary">
+    <motion.div
+      className="flex flex-col items-center justify-evenly rounded-2xl border border-secondary bg-primary/80 p-4 hover:bg-primary dark:bg-dm-primary/90 hover:dark:bg-dm-primary"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 1.2 }}
+    >
       <h6 className="mb-1 text-xl font-semibold text-tertiary">{title}</h6>
       <p className="select-none text-center text-sm text-light">
         {description}
@@ -69,6 +75,6 @@ export const ProjectMobile = ({ project }) => {
           </a>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };

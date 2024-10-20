@@ -23,7 +23,12 @@ const Languages = () => {
 
   return (
     <div className="col-span-2 grid grid-cols-1 gap-y-3 md:mx-auto md:mt-3 md:grid-cols-2 md:gap-x-3 lg:col-span-1 lg:mt-0 lg:grid-cols-1">
-      <BentoContainer className="text-white">
+      <BentoContainer
+        className="text-white"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
         <h3 className="text-xl font-medium">
           Frontend {language == "es" ? "y herramientas" : "and tools"}
         </h3>
@@ -54,7 +59,12 @@ const Languages = () => {
           </li>
         </ul>
       </BentoContainer>
-      <BentoContainer className="text-white">
+      <BentoContainer
+        className="text-white"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
         <h3 className="text-xl font-medium">
           Backend {language == "es" ? "y herramientas" : "and tools"}
         </h3>
