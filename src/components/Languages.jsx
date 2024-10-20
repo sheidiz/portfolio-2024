@@ -1,5 +1,5 @@
-import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 import htmlIcon from "./../assets/icons/html.png";
 import cssIcon from "./../assets/icons/css.png";
 import jsIcon from "./../assets/icons/javascript.png";
@@ -21,35 +21,71 @@ const Languages = () => {
   const { language } = useLanguage();
 
   return (
-    <div className='col-span-2 lg:col-span-1 md:mt-3 lg:mt-0 md:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-y-3 md:gap-x-3'>
-      <div className='bg-lightbox dark:bg-darkbox rounded-2xl p-4 text-white'>
-        <h3 className='text-xl font-semibold'>Frontend {language == "es"? 'y herramientas' : 'and tools'}</h3>
-        <ul className='mt-4 flex flex-wrap gap-4'>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={htmlIcon} className='h-6' /> HTML</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={cssIcon} className='h-6' /> CSS</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={jsIcon} className='h-6' /> JavaScript</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={reactIcon} className='h-6' /> React</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={viteIcon} className='h-6' /> Vite</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={bootstrapIcon} className='h-6' /> Bootstrap</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={tailwindIcon} className='h-6' /> Tailwind</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={figmaIcon} className='h-6' /> Figma</li>
+    <div className="col-span-2 grid grid-cols-1 gap-y-3 md:mx-auto md:mt-3 md:grid-cols-2 md:gap-x-3 lg:col-span-1 lg:mt-0 lg:grid-cols-1">
+      <div className="rounded-2xl bg-lightbox p-4 text-white dark:bg-darkbox">
+        <h3 className="text-xl font-semibold">
+          Frontend {language == "es" ? "y herramientas" : "and tools"}
+        </h3>
+        <ul className="mt-4 flex flex-wrap gap-4">
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={htmlIcon} className="h-6" /> HTML
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={cssIcon} className="h-6" /> CSS
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={jsIcon} className="h-6" /> JavaScript
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={reactIcon} className="h-6" /> React
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={viteIcon} className="h-6" /> Vite
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={bootstrapIcon} className="h-6" /> Bootstrap
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={tailwindIcon} className="h-6" /> Tailwind
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={figmaIcon} className="h-6" /> Figma
+          </li>
         </ul>
       </div>
-      <div className='bg-lightbox dark:bg-darkbox rounded-2xl p-4 text-white'>
-        <h3 className='text-xl font-semibold'>Backend {language == "es"? 'y herramientas' : 'and tools'}</h3>
-        <ul className='mt-4 flex flex-wrap gap-3 sm:gap-4'>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={javaIcon} className='h-6' /> Java</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={springIcon} className='h-6' /> Spring</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={gitIcon} className='h-6' /> Git</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={swaggerIcon} className='h-6' /> Swagger</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={mysqlIcon} className='h-6' /> MySQL</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={postgresqlIcon} className='h-6' /> PostgreSQL</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={postmanIcon} className='h-6' /> Postman</li>
-          <li className='flex flex-col items-center text-xs sm:text-sm font-medium'><img src={junitIcon} className='h-6' /> JUnit</li>
+      <div className="rounded-2xl bg-lightbox p-4 text-white dark:bg-darkbox">
+        <h3 className="text-xl font-semibold">
+          Backend {language == "es" ? "y herramientas" : "and tools"}
+        </h3>
+        <ul className="mt-4 flex flex-wrap gap-3 sm:gap-4">
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={javaIcon} className="h-6" /> Java
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={springIcon} className="h-6" /> Spring
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={gitIcon} className="h-6" /> Git
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={swaggerIcon} className="h-6" /> Swagger
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={mysqlIcon} className="h-6" /> MySQL
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={postgresqlIcon} className="h-6" /> PostgreSQL
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={postmanIcon} className="h-6" /> Postman
+          </li>
+          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+            <img src={junitIcon} className="h-6" /> JUnit
+          </li>
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Languages;

@@ -13,27 +13,27 @@ const ScrollToTopButton = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 shadow dark:shadow-light/30 bg-quaternary/80 text-white rounded-full transition-transform duration-300 hover:bg-quaternary hover:-translate-y-2 ${visible ? 'opacity-100' : 'opacity-0'}`}
-      style={{ display: visible ? 'block' : 'none' }}
+      className={`fixed bottom-4 right-4 rounded-full bg-quaternary/80 text-white shadow transition-transform duration-300 hover:-translate-y-2 hover:bg-quaternary dark:shadow-light/30 ${visible ? "opacity-100" : "opacity-0"}`}
+      style={{ display: visible ? "block" : "none" }}
     >
-      <FaChevronUp className="size-8 md:size-11 p-2 md:p-3" />
+      <FaChevronUp className="size-8 p-2 md:size-11 md:p-3" />
     </button>
   );
 };

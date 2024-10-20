@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { useLanguage } from '../contexts/LanguageContext';
-import EsFlag from '../assets/es-flag.png';
-import EnFlag from '../assets/en-flag.png';
+import React, { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import EsFlag from "../assets/es-flag.png";
+import EnFlag from "../assets/en-flag.png";
 
 const LanguageToggleButton = () => {
   const { language, switchLanguage } = useLanguage();
@@ -11,14 +11,24 @@ const LanguageToggleButton = () => {
   };
 
   return (
-    <div className='pl-3 pr-3 sm:pr-7 py-1 flex gap-2 justify-center border-2 border-[#CFCECE] bg-white rounded-full shadow-[inset_0_4px_4px_0_rgba(0,0,0,0.3)] transition-opacity duration-300'>
-      {language == "es" ?
-        <button className='w-fit text-slate-500 text-sm md:text-base font-semibold flex items-center gap-x-2' onClick={() => handleLanguageSwitch('en')}>EN <img src={EnFlag} className='h-4 md:h-5 inline-block' /></button>
-        :
-        <button className='w-fit text-slate-500 text-sm md:text-base font-semibold flex items-center gap-x-2' onClick={() => handleLanguageSwitch('es')}><img src={EsFlag} className='h-4 md:h-5 inline-block' /> ES</button>
-      }
+    <div className="flex justify-center gap-2 rounded-full border-2 border-[#CFCECE] bg-white py-1 pl-3 pr-3 shadow-[inset_0_4px_4px_0_rgba(0,0,0,0.3)] transition-opacity duration-300 min-[500px]:pr-7">
+      {language == "es" ? (
+        <button
+          className="flex w-fit items-center gap-x-2 text-sm font-semibold text-slate-500 md:text-base"
+          onClick={() => handleLanguageSwitch("en")}
+        >
+          EN <img src={EnFlag} className="inline-block h-4 md:h-5" />
+        </button>
+      ) : (
+        <button
+          className="flex w-fit items-center gap-x-2 text-sm font-semibold text-slate-500 md:text-base"
+          onClick={() => handleLanguageSwitch("es")}
+        >
+          <img src={EsFlag} className="inline-block h-4 md:h-5" /> ES
+        </button>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default LanguageToggleButton
+export default LanguageToggleButton;
