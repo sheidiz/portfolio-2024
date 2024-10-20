@@ -5,17 +5,21 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        lightbox: "linear-gradient(to bottom, #677D6A 40%, #40534C 100%)",
-        darkbox: "linear-gradient(to bottom, #354530 2.11%, #40534C 100%)",
+        lightbox:
+          "radial-gradient(circle closest-corner at center bottom, #627C73 0%, #40534C 100%)",
+        darkbox:
+          "radial-gradient(circle closest-corner at center bottom, #384842 0%, #1E2120 100%)",
       },
       colors: {
-        primary: "#354530",
-        secondary: "#40534C",
-        tertiary: "#677D6A",
-        quaternary: "#D6BD98",
+        primary: "#40534C",
+        secondary: "#677D6A",
+        tertiary: "#D6BD98",
         light: "#F2F2FB",
         dark: "#26272B",
         gray: "#64748B",
+        dm: {
+          primary: "#1E2120",
+        },
       },
       fontFamily: {
         primary: ["Montserrat", "sans-serif"],

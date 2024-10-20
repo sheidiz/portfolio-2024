@@ -15,8 +15,8 @@ export const ProjectMobile = ({ project }) => {
   } = project;
 
   return (
-    <div className="flex flex-col items-center justify-evenly rounded-2xl bg-tertiary/90 p-4 hover:bg-tertiary dark:bg-secondary/90 hover:dark:bg-secondary">
-      <h6 className="mb-1 text-xl font-semibold text-quaternary">{title}</h6>
+    <div className="flex flex-col items-center justify-evenly rounded-2xl border border-secondary bg-primary/80 p-4 hover:bg-primary dark:bg-dm-primary/90 hover:dark:bg-dm-primary">
+      <h6 className="mb-1 text-xl font-semibold text-tertiary">{title}</h6>
       <p className="select-none text-center text-sm text-light">
         {description}
       </p>
@@ -41,7 +41,7 @@ export const ProjectMobile = ({ project }) => {
         {technologies.map((tech, i) => (
           <li
             key={i}
-            className="rounded-2xl bg-quaternary px-2 py-1 text-xs text-secondary"
+            className="rounded-2xl bg-tertiary px-2 py-1 text-xs text-primary"
           >
             {tech}
           </li>

@@ -16,13 +16,14 @@ import postgresqlIcon from "./../assets/icons/postgresql.png";
 import postmanIcon from "./../assets/icons/postman.png";
 import junitIcon from "./../assets/icons/junit5.png";
 import swaggerIcon from "./../assets/icons/swagger.png";
+import BentoContainer from "./BentoContainer";
 
 const Languages = () => {
   const { language } = useLanguage();
 
   return (
     <div className="col-span-2 grid grid-cols-1 gap-y-3 md:mx-auto md:mt-3 md:grid-cols-2 md:gap-x-3 lg:col-span-1 lg:mt-0 lg:grid-cols-1">
-      <div className="rounded-2xl bg-lightbox p-4 text-white dark:bg-darkbox">
+      <BentoContainer className="text-white">
         <h3 className="text-xl font-medium">
           Frontend {language == "es" ? "y herramientas" : "and tools"}
         </h3>
@@ -52,8 +53,8 @@ const Languages = () => {
             <img src={figmaIcon} className="h-6" /> Figma
           </li>
         </ul>
-      </div>
-      <div className="rounded-2xl bg-lightbox p-4 text-white dark:bg-darkbox">
+      </BentoContainer>
+      <BentoContainer className="text-white">
         <h3 className="text-xl font-medium">
           Backend {language == "es" ? "y herramientas" : "and tools"}
         </h3>
@@ -83,7 +84,7 @@ const Languages = () => {
             <img src={junitIcon} className="h-6" /> JUnit
           </li>
         </ul>
-      </div>
+      </BentoContainer>
     </div>
   );
 };

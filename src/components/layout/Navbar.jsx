@@ -10,8 +10,8 @@ const Navbar = () => {
   const t = translations[language];
 
   return (
-    <nav className="flex w-full max-w-[1400px] flex-col items-center gap-y-2 rounded-2xl bg-tertiary/90 px-2 py-2 align-middle dark:bg-primary/90 min-[500px]:flex-row min-[500px]:justify-between min-[500px]:px-4 sm:mx-1 md:py-3 lg:mx-auto">
-      <ul className="flex w-full items-center justify-between gap-x-4 text-white min-[500px]:justify-start">
+    <nav className="flex w-full max-w-[1400px] flex-col items-center gap-y-2 rounded-2xl border border-secondary bg-primary p-2 align-middle dark:bg-dm-primary min-[500px]:flex-row min-[500px]:justify-between min-[500px]:px-4 sm:mt-1 md:py-3 lg:mx-auto">
+      <ul className="flex w-full items-center justify-evenly gap-x-4 text-white min-[500px]:justify-start">
         <li className="font-semibold hover:scale-[102%]">
           <a href="#about">{t.menu.about}</a>
         </li>
