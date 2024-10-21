@@ -31,6 +31,7 @@ const item = {
 const About = () => {
   const { language } = useLanguage();
   const t = translations[language];
+  const isMobile = window.matchMedia("(max-width: 992px)").matches;
 
   return (
     <section
@@ -41,7 +42,7 @@ const About = () => {
         className="col-span-2 md:col-span-1"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 0.5, delay: isMobile ? 0 : 1 }}
       >
         <h1 className="mb-1 text-2xl font-bold text-white md:text-3xl">
           Sheila Diz
