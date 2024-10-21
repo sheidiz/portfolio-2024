@@ -1,59 +1,84 @@
-import React from 'react'
-import Accordion from '../components/Accordion';
-import { useLanguage } from '../contexts/LanguageContext';
-import translations from '../translations/data';
+import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import translations from "../translations/data";
+import { FaRegCircleCheck } from "react-icons/fa6";
+import BentoContainer from "../components/BentoContainer";
 
 const Experience = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <section id='experience' className='max-w-4xl mx-3 mt-3 md:mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-3 text-white'>
-      <div className="education-section">
-        <Accordion name={language == "es" ? "Educación" : "Education"}>
-          <div className="flex justify-center">
-            <div className="space-y-6 border-l-2 border-dashed">
-              {t.education.map((item, i)=>(
-                <div key={i} className="relative w-full">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="bg-light absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-tertiary">
-                  <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
-                </svg>
+    <section
+      id="experience"
+      className="mx-3 mt-3 grid max-w-[1400px] grid-cols-1 text-white md:mx-auto md:grid-cols-2 md:gap-x-3 md:px-2 2xl:px-0"
+    >
+      <BentoContainer
+        className=""
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+      >
+        <h3 className="text-xl font-medium">
+          {language == "es" ? "Educación" : "Education"}
+        </h3>
+        <div className="flex justify-center p-3 text-lg">
+          <div className="space-y-6 border-l-2 border-dashed">
+            {t.education.map((item, i) => (
+              <div key={i} className="relative w-full">
+                <FaRegCircleCheck className="absolute top-0 z-10 -ml-3.5 h-7 w-7 rounded-full bg-secondary text-light" />
                 <div className="ml-6">
                   <h4 className="font-bold text-light">{item.title}</h4>
-                  <p className="mt-1 max-w-screen-sm text-sm text-light/80">{item.institution}</p>
-                  <p className="mt-1 max-w-screen-sm text-sm text-light/60">{item.description}</p>
-                  <span className="mt-1 block text-sm font-semibold text-quaternary/50">{item.dates}</span>
+                  <p className="mt-1 max-w-screen-sm text-sm text-light/80">
+                    {item.institution}
+                  </p>
+                  <p className="mt-1 max-w-screen-sm text-sm text-light/60">
+                    {item.description}
+                  </p>
+                  <span className="mt-1 block text-sm font-semibold text-tertiary/75">
+                    {item.dates}
+                  </span>
                 </div>
               </div>
-              ))}  
-            </div>
+            ))}
           </div>
-        </Accordion>
-      </div>
-      <div className="experience-section mt-3 md:mt-0">
-        <Accordion name={language == "es" ? "Experiencia Laboral" : "Work Experience"}>
-          <h4 className='mb-1 font-bold text-light'>Ukelele Growth Marketing</h4>
-          <div className="flex justify-center">
-            <div className="space-y-6 border-l-2 border-dashed">
-              {t.work.map((item, index)=>(
-                <div key={index} className="relative w-full">
+        </div>
+      </BentoContainer>
+      <BentoContainer
+        className="mt-3 md:mt-0"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1.2 }}
+      >
+        <h3 className="text-xl font-medium">
+          {language == "es" ? "Experiencia Laboral" : "Work Experience"}
+        </h3>
+        <div className="flex justify-center p-3 text-lg">
+          <div className="space-y-6 border-l-2 border-dashed">
+            {t.work.map((item, index) => (
+              <div key={index} className="relative w-full">
+                <FaRegCircleCheck className="absolute top-0 z-10 -ml-3.5 h-7 w-7 rounded-full bg-secondary text-light" />
                 <div className="ml-6">
                   <h4 className="font-semibold text-light">{item.title}</h4>
-                  <ul className="list-disc mt-1 ml-3 max-w-screen-sm text-sm text-light/60">
-                    {item.description.map((l,i) =>(
+                  <p className="mt-1 max-w-screen-sm text-sm text-light/80">
+                    {item.institution}
+                  </p>
+                  <ul className="ml-3 mt-1 max-w-screen-sm list-disc text-sm text-light/60">
+                    {item.description.map((l, i) => (
                       <li key={i}>{l}</li>
                     ))}
                   </ul>
-                  <span className="mt-1 block text-sm font-semibold text-quaternary/50">{item.dates}</span>
+                  <span className="mt-1 block text-sm font-semibold text-tertiary/75">
+                    {item.dates}
+                  </span>
                 </div>
               </div>
-              ))}  
-            </div>
+            ))}
           </div>
-        </Accordion>
-      </div>
+        </div>
+      </BentoContainer>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
