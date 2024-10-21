@@ -10,13 +10,14 @@
 
 ## Tecnologías utilizadas
 
-Mi portfolio personal <a href="https://sheiladiz.vercel.app/" target="_blank">sheiladiz.vercel.app</a> contiene mis proyectos de github, además de mis habilidades y conocimientos.<br/>
+Mi portfolio personal contiene mis proyectos de github, además de mis habilidades y conocimientos.<br/>
 
-Este proyecto fue construido usando estas tecnologias y herramientas
+Este proyecto fue construido usando estas tecnologias y herramientas:
 
 - React
 - Vite
 - Tailwind
 - CSS3
+- Framer Motion
 - VsCode
 - Vercel
