@@ -18,8 +18,45 @@ import junitIcon from "./../assets/icons/junit5.png";
 import swaggerIcon from "./../assets/icons/swagger.png";
 import BentoContainer from "./BentoContainer";
 
+const tools = {
+  frontend: [
+    { name: "HTML", icon: htmlIcon },
+    { name: "CSS", icon: cssIcon },
+    { name: "JavaScript", icon: jsIcon },
+    { name: "React", icon: reactIcon },
+    { name: "Vite", icon: viteIcon },
+    { name: "Bootstrap", icon: bootstrapIcon },
+    { name: "Tailwind", icon: tailwindIcon },
+    { name: "Figma", icon: figmaIcon },
+  ],
+  backend: [
+    { name: "Java", icon: javaIcon },
+    { name: "Spring", icon: springIcon },
+    { name: "JUnit", icon: junitIcon },
+    { name: "Swagger", icon: swaggerIcon },
+    { name: "Postman", icon: postmanIcon },
+    { name: "Git", icon: gitIcon },
+    { name: "MySQL", icon: mysqlIcon },
+    { name: "PostgreSQL", icon: postgresqlIcon },
+  ],
+};
+
+const ToolItem = ({ name, icon }) => (
+  <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
+    <img
+      src={icon}
+      className="h-6 drop-shadow-white"
+      alt={`${name} icon`}
+      aria-hidden="true"
+    />
+    {name}
+  </li>
+);
+
 const Languages = () => {
   const { language } = useLanguage();
+  const sectionTitle = (section) =>
+    `${section} ${language === "es" ? "y herramientas" : "and tools"}`;
 
   return (
     <div className="col-span-2 grid grid-cols-1 gap-y-3 md:mx-auto md:mt-3 md:grid-cols-2 md:gap-x-3 lg:col-span-1 lg:mt-0 lg:grid-cols-1">
@@ -29,36 +66,11 @@ const Languages = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <h3 className="text-xl font-medium">
-          Frontend {language == "es" ? "y herramientas" : "and tools"}
-        </h3>
+        <h3 className="text-xl font-medium">{sectionTitle("Frontend")}</h3>
         <ul className="mt-4 flex flex-wrap gap-4">
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={htmlIcon} className="h-6" aria-hidden="true" /> HTML
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={cssIcon} className="h-6" aria-hidden="true" /> CSS
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={jsIcon} className="h-6" aria-hidden="true" /> JavaScript
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={reactIcon} className="h-6" aria-hidden="true" /> React
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={viteIcon} className="h-6" aria-hidden="true" /> Vite
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={bootstrapIcon} className="h-6" aria-hidden="true" />{" "}
-            Bootstrap
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={tailwindIcon} className="h-6" aria-hidden="true" />{" "}
-            Tailwind
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={figmaIcon} className="h-6" aria-hidden="true" /> Figma
-          </li>
+          {tools.frontend.map((tool) => (
+            <ToolItem key={tool.name} {...tool} />
+          ))}
         </ul>
       </BentoContainer>
       <BentoContainer
@@ -67,35 +79,11 @@ const Languages = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <h3 className="text-xl font-medium">
-          Backend {language == "es" ? "y herramientas" : "and tools"}
-        </h3>
+        <h3 className="text-xl font-medium">{sectionTitle("Backend")}</h3>
         <ul className="mt-4 flex flex-wrap gap-3 sm:gap-4">
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={javaIcon} className="h-6" aria-hidden="true" /> Java
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={springIcon} className="h-6" aria-hidden="true" /> Spring
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={gitIcon} className="h-6" aria-hidden="true" /> Git
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={swaggerIcon} className="h-6" aria-hidden="true" /> Swagger
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={mysqlIcon} className="h-6" aria-hidden="true" /> MySQL
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={postgresqlIcon} className="h-6" aria-hidden="true" />{" "}
-            PostgreSQL
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={postmanIcon} className="h-6" aria-hidden="true" /> Postman
-          </li>
-          <li className="flex flex-col items-center text-xs font-medium sm:text-sm">
-            <img src={junitIcon} className="h-6" aria-hidden="true" /> JUnit
-          </li>
+          {tools.backend.map((tool) => (
+            <ToolItem key={tool.name} {...tool} />
+          ))}
         </ul>
       </BentoContainer>
     </div>

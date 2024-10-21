@@ -21,6 +21,9 @@ export default {
           primary: "#1E2120",
         },
       },
+      dropShadow: {
+        white: "0 2px 2px rgba(255, 255, 255, 0.15)",
+      },
       fontFamily: {
         primary: ["Montserrat", "sans-serif"],
       },
