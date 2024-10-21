@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="mx-3 mt-3 grid max-w-[1400px] grid-cols-1 text-white md:mx-auto md:grid-cols-2 md:gap-x-3 md:px-2 2xl:px-0"
+      className="mt-3 grid grid-cols-1 text-white md:grid-cols-2 md:gap-x-3"
     >
       <BentoContainer
         className=""

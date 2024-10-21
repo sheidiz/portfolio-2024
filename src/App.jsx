@@ -25,10 +25,10 @@ function App() {
           />
           <link rel="icon" href="/favicon.ico" />
         </Helmet>
-        <header className="p-2 font-primary">
+        <header className="max-w-[1400px] p-2 px-2 font-primary lg:mx-auto">
           <Navbar />
         </header>
-        <main className="pb-5 font-primary">
+        <main className="max-w-[1400px] px-2 pb-5 font-primary md:mx-auto">
           <About />
           <Experience />
           <Projects />

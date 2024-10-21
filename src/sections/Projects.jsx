@@ -10,10 +10,7 @@ const Projects = () => {
   const t = translations[language];
 
   return (
-    <section
-      id="projects"
-      className="mx-3 mt-5 max-w-[1400px] md:mx-auto md:px-2 2xl:px-0"
-    >
+    <section id="projects" className="mt-5">
       <h5 className="mb-5 text-xl font-semibold text-white">
         {language == "es" ? "Proyectos Personales" : "Personal Projects"}
       </h5>

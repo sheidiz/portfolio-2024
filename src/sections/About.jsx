@@ -36,7 +36,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="mx-3 mt-3 grid max-w-[1400px] grid-cols-2 gap-2 md:mx-auto md:gap-3 md:px-2 lg:grid-cols-3 2xl:px-0"
+      className="mt-3 grid grid-cols-2 gap-2 md:gap-3 lg:grid-cols-3"
     >
       <BentoContainer
         className="col-span-2 md:col-span-1"
